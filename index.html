@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Store</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+   <!-- daisyui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  .font-adlam {
+  font-family: "ADLaM Display", serif;
+  }
+.font-sora{
+  font-family: "Sora", serif;
+}
+</style>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'navigation-cbg':'rgba(255, 249, 244, 1)',
+          'four':'rgba(255, 220, 38, 1)',
+          'regi':'#FFDC26'
+        }
+      }
+    }
+  }
+</script>
+
+</head>
+
+
+
+<body class="font-adlam ">
+ <!-- Header -->
+  <header class="">
+<nav class=" font-sora overflow-x-hidden  overflow-y-hidden ">
+  <div class="navbar  bg-[#FFF9F4] pd bg-base-100 lg:pl-28 lg:pr-28 mb-6 border-b-[1px] border-slate-950 lg:border-0">
+    <div class="navbar-start w-10/12 mx-auto  ">
+      <!-- <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Find a pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div> -->
+      <img src="c1-assets/logo-header.png" alt="" class="w-8 h-8">
+      <h2 class="text-2xl font-normal hidden lg:flex">Browse<span class="text-four">4</span>Pets</h2>
+    </div>
+    <div class=" navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="font-normal">Find a pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact us</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end  ">
+      <div class="dropdown dropdown-left  ">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block h-5 w-5 stroke-current">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu  menu-horizontal  dropdown-content bg-base-100 rounded-box z-[2000] mt-3 w-72 p-2 shadow ">
+          <li><a>Find a pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+      <button class="btn btn-ghost btn-circle hidden lg:flex">
+        <div class="indicator">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+          <!-- <span class="badge badge-xs badge-primary indicator-item"></span> -->
+        </div>
+      </button>
+      <button class="btn btn-ghost btn-circle hidden lg:flex ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      
+    </div>
+
+
+    <button class=" btn btn-outline border-[#FFDC26] text-[#000000] w-28  mr-3  h-11 font-normal  hidden lg:flex">Login</button>
+      <button class=" bg btn  w-36 h-11 font-normal bg-[#FFDC26] hidden lg:flex">Register</button>
+    </div>
+  </div>
+</nav>
+<!-- <section class="w-11/12 pr-10 mx-auto bg-[url('c1-assets/cat-big.png')] bg-no-repeat bg-bottom bg-contain bg-[center_80%] lg:mt-0   "> -->
+  <!-- sectioon -->
+   
+  <section class="w-11/12 pr-10 mx-auto bg-[url('/c1-assets/cat-big.png')] bg-no-repeat bg-bottom bg-contain bg-center flex flex-col justify-between min-h-[500px] lg:mt-0 ">
+
+
+  <div class="pb-64  hero min-h-screen lg:w-[32rem] lg:-mb-10">
+    <div class=" flex-col mb-36 lg:flex-row-reverse lg:mt-36">
+      
+      <div>
+        
+        <h1 class="text-6xl text-[50px] font-light">Pamper Your Pet, Because They Deserve the Bes</h1>
+        <p class="py-6 text-[20px] font-sora ">
+          Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+        </p>
+        <button class="bg btn  w-40 h-11 font-normal bg-[#FFDC26] lg:flex">Find a pet</button>
+      </div>
+    </div>
+  </div>
+</section>
+  </header>
+  <!-- Main -->
+   <main>
+
+   </main>
+   <!-- Footer -->
+    <footer>
+
+    </footer>
+</body>
+</html>
